@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Volume-pyramid" />
+    <meta name="keywords" content="immaculata, ics2o" />
+    <meta name="author" content="KestrelBryce" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- favicon -->
+    <link rel="TRIANGLE_FAVICON" sizes="180x180" href="./fav_index/TRIANGLE_FAVICON.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./fav_index/TRIANGLE_FAVICON.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./fav_index/TRIANGLE_FAVICON.png" />
+    <link rel="manifest" href="./fav_index/site.webmanifest" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-purple.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <!-- page title -->
+    <title>Volume of a pyramid in javascript</title>
+  </head>
+  <body>
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script src="./js/script.js"></script>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+          <span class="mdl-layout-title">Pyramid volume calculator</span>
+        </div>
+      </header>
+
+      <p>Enter the dimensions of your pyramid:</p>
+
+      <!-- image -->
+      <img src="./fav_index/RIGHT_TRIANGLE.jpg"
+      width= "250"
+      height= "250">
+        
+      <!-- User input -->
+      
+      <!-- Side a textbox -->
+      <p>Pyramid side a in cm:</p>
+          <div class="mdl-textfield mdl-js-textfield">
+            <input
+              class="mdl-textfield__input"
+              type="number"
+              step="any"
+              id="Side-a-here"
+            />
+            <label class="mdl-textfield__label" for="Side-a-here">Numbers go here...</label>
+            <span class="mdl-textfield__error">Input is not a number!</span>
+          </div>
+
+        
+        <!-- Side b textbox -->
+        
+        <p>Pyramid side b in cm:</p>
+          <div class="mdl-textfield mdl-js-textfield">
+            <input
+              class="mdl-textfield__input"
+              type="number"
+              step="any"
+              id="Side-b-here"
+            />
+             <!-- pattern="-?[0-9]*(\.[0-9]+)?" -->
+            <label class="mdl-textfield__label" for="Side-b-here">Numbers go here... </label>
+            <span class="mdl-textfield__error">Input is not a number!</span>
+          </div>
+
+          <!-- Height textbox -->
+      
+        </p>
+              <p>Pyramid height in cm:</p>
+          <div class="mdl-textfield mdl-js-textfield">
+            <input
+              class="mdl-textfield__input"
+              type="number"
+              step="any"
+              id="Height-here"
+            />
+            <label class="mdl-textfield__label" for="Height-here">Numbers go here... </label>
+            <span class="mdl-textfield__error">Input is not a number!</span>
+          </div>
+
+        <!-- volume calculate button -->
+        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="javascript:Calculate_volume()">
+          <p>Calculate volume</p>
+        </button>
+        <br />
+        <p>
+          <div id="Pyramid-results">
+
+          </div>
+        </p>
+      </main>
+    </div>
+  </body>
+</html>
