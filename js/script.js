@@ -1,31 +1,39 @@
-  /* This function calculates the volume of a pyramid. 
+  /* This function converts celsius to farenheit. 
 */
 
-function Calculate_volume() {
+function Calculate_cel_to_far() {
   // input
-  let Side_a = parseFloat( (document.getElementById('Side-a-here').value));
-
-  let Side_b = parseFloat( (document.getElementById('Side-b-here').value));
+  let Cel = parseFloat( (document.getElementById('Cel-to-far-here').value));
   
-  let Height = parseFloat( (document.getElementById('Height-here').value));
+  // Equation
+  let Cel_to_far_answer = 9/5  *  Cel  +  32;
   
-  // naming constants and stuff
-  const Sixth_rate = 0.1666666667
-  
-  let Pyramid_volume = Sixth_rate * Side_a * Side_b * Height;
   // remember to use .toFixed(2) to round to two decimal places
   
   // output for volume
-  document.getElementById('Pyramid-results').innerHTML = "Your volume rounded to the nearest hundreth is " + Pyramid_volume.toFixed(2) + "cm<sup>3</sup>"
+  document.getElementById('Cel-to-far-results').innerHTML = "Your temperature in celsius rounded to the nearest degree is " + Cel_to_far_answer.toFixed(0)  +  "°"
 
 
-  // unused code
+}
 
-  // parseInt
-  // document.getElementById('Pyramid-results').innerHTML = "Your volume rounded to the nearest hundreth is " + Pyramid_volume.toFixed(2) + "cm."
-  // let Pyramid_volume = Side_a * Side_b * Height * Sixth_rate;
-  // let Pyramid_volume = Side_a * Side_b * Third_rate * Height;
-  // const Third_rate = 0.3
+  /* This function converts farenheit to celsius. 
+*/
+
+function Calculate_far_to_cel() {
+  // input
+  let Far = parseFloat( (document.getElementById('Far-to-cel-here').value));
+
+  // Equation
+  let Far_to_cel_answer = 5/9  *  (Far  -  32);
   
+  // remember to use .toFixed(2) to round to two decimal places
+  
+  // output for volume
+  document.getElementById('Far-to-cel-results').innerHTML = "Your temperature in farenheit rounded to the nearest degree is " + Far_to_cel_answer.toFixed(0)  +  "°."
 
+
+  // unused/currently testing code
+  // let Pyramid_volume = float(5)/float(9) * (Far-32);
+
+  
 }
